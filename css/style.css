@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+.body{
+    background: url("../img/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#board{
+    background: linear-gradient(rgb(180, 204, 180),rgb(201, 201, 166));
+    width: 90vmin;
+    height: 92vmin;
+    border: 4px solid black;
+    display: grid;
+    grid-template-rows: repeat(18,1fr);
+    grid-template-columns: repeat(18,1fr);
+}
+
+.head{
+    background: linear-gradient(to right , red 10%,purple );
+    border: 2px solid purple;
+    transform: scale(1.02);
+    border-radius: 9px;
+}
+
+.food{
+    background: linear-gradient(red,yellow);
+    border: .25vmin solid black;
+    border-radius: 8px;
+
+}
+
+.snake{
+    background-color: purple;
+    border: .25vmin solid white;
+    border-radius: 12px;
+}
+
+#score{
+    position: absolute;
+    top: 9px;
+    right: 200px;
+    font-size: 32px;
+    font-weight: bold;
+    padding: 3px;
+    border: 2px dotted white;
+    font-family: 'Fira Sans', sans-serif;
+}
